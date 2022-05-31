@@ -2,7 +2,7 @@
   <?php
     //admin_link();
   ?>
-  <section class="header__right">
+  <section class="header__left">
     <div class="logo">
       <?php
 
@@ -15,20 +15,22 @@
       ?>
     </div>
   </section>
-  <section class="header__left">
+  <section class="header__mid">
     <div class="search">
       <?php
-
+  
         // Search-bar
         get_search_form();
       ?>
     </div>
-    <?php
 
-      // Navigation
-      wp_nav_menu(
-        array(
-          "container" => "nav"
+  </section>
+  <section class="header__right">
+    <?php
+    // Navigation
+    wp_nav_menu(
+      array(
+        "container" => "nav"
         )
       );
     ?>
