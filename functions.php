@@ -132,7 +132,7 @@ function print_products() {
                 ?>
               </figure>
               <p class="price">
-                Price: <?php echo $price ?>DKK.
+                Price: <?php echo $price ?>$
               </p>
             </a>
           <?php
