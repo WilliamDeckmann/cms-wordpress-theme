@@ -1,1 +1,5 @@
-# cms-wordpress-theme
+# CMS WordPress Theme
+
+### Made by:
+- Marcus Hjorth
+- William Deckmann
