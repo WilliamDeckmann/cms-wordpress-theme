@@ -128,7 +128,7 @@ function print_products() {
               </h3>
               <figure>
                 <?php
-                  the_post_thumbnail(null, "medium");
+                  the_post_thumbnail(null, "thumbnail");
                 ?>
               </figure>
               <p class="price">
