@@ -10,7 +10,7 @@
         if(function_exists(the_custom_logo())) {
           the_custom_logo();
         } else {
-          echo "<h2>" . get_bloginfo() . "</h2>";
+          echo "<h1>" . get_bloginfo() . "</h1>";
         }
       ?>
     </div>
