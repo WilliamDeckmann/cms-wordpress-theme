@@ -1,12 +1,14 @@
 <footer class="footer">
-  <?php
+  <div class="footer-container">
+    <?php
 
     // Widgets
     dynamic_sidebar("footer-widgets");
-  ?>
-  <?php
+    ?>
+      <?php
 
     // Footer
     wp_footer();
-  ?>
+    ?>
+  </div>
 </footer>
