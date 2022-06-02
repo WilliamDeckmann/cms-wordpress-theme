@@ -18,16 +18,18 @@
           while(have_posts()) {
             the_post();
             ?>
-            <article>
-              <?php
+            <article class="article">
+              <div class="post-container">
+                <?php
 
-                // Content
-                echo "<h2>" . get_the_title() . "</h2>";
-                echo get_the_post_thumbnail(null, "medium");
-                echo "<div class='entry'>";
-                  the_content();
-                echo "</div>";
-              ?>
+                  // Content
+                  echo "<h2>" . get_the_title() . "</h2>";
+                  //echo get_the_post_thumbnail(null, "medium");
+                  echo "<div class='entry'>";
+                    the_content();
+                  echo "</div>";
+                ?>
+              </div>
             </article>
             <?php
           }

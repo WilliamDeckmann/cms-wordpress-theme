@@ -34,7 +34,7 @@ function admin_link() {
 // Shortcodes
 
 function generate_lorem() {
-  return "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis modi neque voluptas nam totam! Optio praesentium minus delectus sint mollitia maiores dicta. Voluptates sed aliquid eius, doloremque rerum dicta eum.";
+  return "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec justo ac urna ultricies porta. Cras pellentesque mauris ac leo feugiat tempus. Integer egestas sit amet turpis gravida accumsan. Nullam fermentum turpis id turpis lobortis consectetur. Cras ac neque sapien. Etiam est dolor, interdum eget metus nec, faucibus dapibus felis. Sed accumsan ornare massa sed ultrices. Sed vel nulla ac risus lobortis pharetra. Duis quam augue, feugiat in feugiat et, commodo a felis. Mauris quis mattis ante.</p>";
 }
 add_shortcode("lorem", "generate_lorem");
 
@@ -132,7 +132,7 @@ function print_products() {
                 ?>
               </figure>
               <p class="price">
-                Price: <?php echo $price ?>DKK.
+                Price: <?php echo $price ?>$
               </p>
             </a>
           <?php
@@ -152,5 +152,11 @@ add_shortcode("shop", "print_products");
 function load_scripts(){
   wp_enqueue_script("main_js", get_template_directory_uri() . "/js/main.js",  NULL, 1.0, true);
   wp_enqueue_style("style", get_stylesheet_uri());
+  wp_enqueue_style("resets", get_template_directory_uri() . "/styles/resets.css");
+  wp_enqueue_style("header_styles", get_template_directory_uri() . "/styles/headerStyle.css"); 
+  wp_enqueue_style("post_card", get_template_directory_uri() . "/styles/postCard.css"); 
+  wp_enqueue_style("post_container", get_template_directory_uri() . "/styles/postContainer.css");
+  wp_enqueue_style("product_card", get_template_directory_uri() . "/styles/productCard.css");
+  wp_enqueue_style("product_container", get_template_directory_uri() . "/styles/productContainer.css"); 
 }
 add_action("wp_enqueue_scripts", "load_scripts");
