@@ -153,7 +153,8 @@ function load_scripts(){
   wp_enqueue_script("main_js", get_template_directory_uri() . "/js/main.js",  NULL, 1.0, true);
   wp_enqueue_style("style", get_stylesheet_uri());
   wp_enqueue_style("resets", get_template_directory_uri() . "/styles/resets.css");
-  wp_enqueue_style("header_styles", get_template_directory_uri() . "/styles/headerStyle.css"); 
+  wp_enqueue_style("header_styles", get_template_directory_uri() . "/styles/headerStyle.css");
+  wp_enqueue_style("footer_styles", get_template_directory_uri() . "/styles/footerStyle.css");
   wp_enqueue_style("post_card", get_template_directory_uri() . "/styles/postCard.css"); 
   wp_enqueue_style("post_container", get_template_directory_uri() . "/styles/postContainer.css");
   wp_enqueue_style("product_card", get_template_directory_uri() . "/styles/productCard.css");
