@@ -112,33 +112,39 @@ function print_products() {
   $query = new WP_Query($args);
   if($query->have_posts()) {
     ?>
-    <div class="products">
-      <?php
-        while ($query->have_posts()){
-          $query->the_post();
-          $price = get_post_meta(get_the_ID(), "price", true);
-          $stock = get_post_meta(get_the_ID(), "stock", true);
-          //var_dump(get_the_title());
-          ?>
-            <a class="product" href="<?php echo get_the_permalink() ?>">
-              <h3>
-                <?php
-                  echo get_the_title();
-                ?>
-              </h3>
-              <figure>
-                <?php
-                  the_post_thumbnail(null, "thumbnail");
-                ?>
-              </figure>
-              <p class="price">
-                Price: <?php echo $price ?>$
-              </p>
-            </a>
-          <?php
-        }
-      ?>
-    </div>
+    <section class="products">
+      <hr>
+      <h2>
+        Latest products:
+      </h2>
+      <ul class="products-container">
+        <?php
+          while ($query->have_posts()){
+            $query->the_post();
+            $price = get_post_meta(get_the_ID(), "price", true);
+            $stock = get_post_meta(get_the_ID(), "stock", true);
+            //var_dump(get_the_title());
+            ?>
+              <a class="product-card" href="<?php echo get_the_permalink() ?>">
+                <h3>
+                  <?php
+                    echo get_the_title();
+                  ?>
+                </h3>
+                <figure>
+                  <?php
+                    the_post_thumbnail(null, "thumbnail");
+                  ?>
+                </figure>
+                <p class="price">
+                  Price: <?php echo $price ?>$
+                </p>
+              </a>
+            <?php
+          }
+        ?>
+      </ul>
+    </section>
     <?php
   }
   return ob_get_clean();
