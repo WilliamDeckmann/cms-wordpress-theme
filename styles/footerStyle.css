@@ -1,12 +1,12 @@
-footer {
+.footer {
 	background: lightblue;
-	padding: 3%;
+	padding: 24px;
 	margin-top: 2rem;
 }
 
 .footer-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 	gap: 20%;
 }
 
@@ -14,4 +14,16 @@ footer {
 	margin: 10px;
 	display: flex;
 	flex-direction: row;
+}
+
+.wp-block-latest-posts.wp-block-latest-posts__list {
+	list-style-type: disc;
+}
+
+.wp-block-latest-posts.wp-block-latest-posts__list li:first-child {
+	margin-top: 0;
+}
+
+.wp-block-latest-posts.wp-block-latest-posts__list li {
+	margin-top: 12px;
 }
