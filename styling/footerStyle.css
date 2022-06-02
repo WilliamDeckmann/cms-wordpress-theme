@@ -1,0 +1,14 @@
+footer {
+	background-color: lightblue;
+	padding: 3%;
+}
+
+footer-container {
+	display: flex;
+}
+
+wp-block-archives-list wp-block-archives {
+	margin: 10px;
+	display: flex;
+	flex-direction: row;
+}

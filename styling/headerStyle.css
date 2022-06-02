@@ -11,38 +11,57 @@ header {
     margin-bottom: 200px;
 }
 
-.logo {
+/* ----- Logo ----- */
+
+.logo img {
+    height: 80px;
+	width: auto;
+	margin-right: 10px;
+    
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.header__mid {
-    background-color: bisque;
-}
+/* ----- Search bar ----- */
 
 
-.header__right {
-    
-    background-color: bisque;
-}
 
 .page_item {
     text-decoration: none;
     margin-right: 25px;
-
 }
 
+#s {
+	padding: 10px;
+	border-radius: 20px;
+	border: solid 1px;
+	outline: none;
+	border-color: lightgray
+}
+
+#searchsubmit {
+	background: white;
+	padding: 10px;
+	border-radius: 20px;
+	border: solid 1px;
+	border-color: lightgray
+}
+
+
+
+/* ----- Navigation ----- */
+
+.header__right ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+}
 
 a {
     text-decoration: none;
     color: black;
 }
 
-
-ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-decoration: none;
-}
