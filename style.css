@@ -10,20 +10,17 @@ Tested up to: 5.9
 Requires PHP: 5.6
 */
 
+/* ----- Other ----- */
 
-
-/* Styles */
-
-/* ----- Resets ----- */
-
-body {
-    margin: 0px;
+.header {
+	margin: 0;
 }
 
-a {
-    text-decoration: none;
+.header__right ul {
+	list-style-type: none;
 }
 
-#site-navigation ul li {
-    list-style: none;
+.logo img {
+	width: auto;
+	height: 80px;
 }

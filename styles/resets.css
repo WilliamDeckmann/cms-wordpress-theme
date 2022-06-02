@@ -1,0 +1,15 @@
+* {
+	transition: all 0.2s;
+}
+
+body {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
