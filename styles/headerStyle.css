@@ -3,6 +3,8 @@ header {
     height: 80px;
     
     padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     
     display: flex;
     justify-content: space-between;
@@ -13,14 +15,16 @@ header {
 
 /* ----- Logo ----- */
 
-.logo img {
-    height: 80px;
-	width: auto;
-	margin-right: 10px;
-    
+.logo {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+    margin-right: 10px;
 }
 
 /* ----- Search bar ----- */
@@ -29,7 +33,6 @@ header {
 
 .page_item {
     text-decoration: none;
-    margin-right: 25px;
 }
 
 #s {
@@ -53,11 +56,14 @@ header {
 /* ----- Navigation ----- */
 
 .header__right ul {
-    list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     text-decoration: none;
+    gap: 25px;
+    
+    list-style: none;
+    margin-right: 20px;
 }
 
 a {

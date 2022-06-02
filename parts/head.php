@@ -7,18 +7,10 @@
 
  
   <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/styling/headerStyle.css">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100;200&family=Montserrat:wght@600&family=Roboto:wght@300&family=Zen+Kaku+Gothic+Antique:wght@500&display=swap" rel="stylesheet">
-  
-
-  <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style.css"> -->
-  <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/styles/resets.css"> -->
-  <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/styles/headerStyle.css"> -->
-  <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/styles/postCard.css"> -->
-  <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/styles/postContainer.css"> -->
 
   <?php wp_head(); ?> <!-- Adds admin control-bar to the top of the page -->
   <title><?php echo get_bloginfo() ?></title>
