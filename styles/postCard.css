@@ -4,6 +4,16 @@
 	align-items: center;
 }
 
+.main__h2 {
+	text-align: center;
+	font-size: 3em;
+}
+
+.entry {
+	text-align: center;
+}
+
+
 .post-cards-list {
 	width: calc(600px + 24px + 24px); /* Container width - padding*2 */
 	padding: 24px;
