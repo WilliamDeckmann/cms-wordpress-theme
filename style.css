@@ -10,8 +10,17 @@ Tested up to: 5.9
 Requires PHP: 5.6
 */
 
+/* ----- Other ----- */
 
+.header {
+	margin: 0;
+}
 
-/* Styles */
+.header__right ul {
+	list-style-type: none;
+}
 
-/* bing bong v4 */
+.logo img {
+	width: auto;
+	height: 80px;
+}

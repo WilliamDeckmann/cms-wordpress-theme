@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style.css">
+  <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style.css"> -->
+  <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/styles/resets.css"> -->
+  <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/styles/headerStyle.css"> -->
+  <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/styles/postCard.css"> -->
+  <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/styles/postContainer.css"> -->
   <?php wp_head(); ?> <!-- Adds admin control-bar to the top of the page -->
   <title><?php echo get_bloginfo() ?></title>
 </head>

@@ -1,0 +1,22 @@
+* {
+	transition: all 0.2s;
+}
+
+body {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+figure {
+    margin: 0;
+}

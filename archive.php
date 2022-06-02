@@ -11,33 +11,35 @@
       get_template_part("parts/header");
     ?>
     <main class="main">
-      <?php
+      <ul class="post-cards-list">
+        <?php
 
-        // Main loop
-        if(have_posts()) {
-          while(have_posts()) {
-            the_post();
-            ?>
-            <a href="<?php echo get_permalink();?>">
-              <?php
-
-                // Content
-                echo "<h2>" . get_the_title() . "</h2>";
-                echo get_the_post_thumbnail(null, "thumbnail");
-                echo "<div>";
-                echo get_the_excerpt();
-                echo "</div>";
-                //echo "<div class='entry'>" . get_the_content() . "</div>";
+          // Main loop
+          if(have_posts()) {
+            while(have_posts()) {
+              the_post();
               ?>
-            </a>
-            <?php
-          }
-        } else {
+              <a class="post-card" href="<?php echo get_permalink();?>">
+                <?php
 
-          // 404 (site not found!)
-          echo "<p>The site you are looking for, doesn't exist!</p>";
-        }
-      ?>
+                  // Content
+                  echo "<h2>" . get_the_title() . "</h2>";
+                  echo get_the_post_thumbnail(null, "thumbnail");
+                  echo "<p>";
+                  echo get_the_excerpt();
+                  echo "</p>";
+                  //echo "<div class='entry'>" . get_the_content() . "</div>";
+                ?>
+              </a>
+              <?php
+            }
+          } else {
+
+            // 404 (site not found!)
+            echo "<p class='error-message'>The site you are looking for, doesn't exist!</p>";
+          }
+        ?>
+      </ul>
     </main>
     <?php
 
