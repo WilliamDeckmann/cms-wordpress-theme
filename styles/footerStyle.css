@@ -15,3 +15,9 @@ footer {
 	display: flex;
 	flex-direction: row;
 }
+
+.wp-container-3  {
+	display: grid !important;
+	grid-template-columns: repeat(3, auto);
+	
+}
