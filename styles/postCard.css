@@ -5,7 +5,7 @@
 }
 
 .post-cards-list {
-	width: calc(600px + 24px + 24px);
+	width: calc(600px + 24px + 24px); /* Container width - padding*2 */
 	padding: 24px;
 	margin: 0;
 	display: flex;
