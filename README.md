@@ -10,3 +10,5 @@ Our theme is more than anything a "starter-package". It's purpose is to get you 
 blog-posts/articles crucial for us as we determined that it was an important part of what reinforces the buyer-seller relationship when surfing the site.
 The product-cards are more or less self explanatory as they serve to let the user see a overview of all the products on the page, and makes it possible to actually purchase the products being sold the the website.
 These are the key features of our theme, because in our vision, "less is more" - Ludwig Mies van der Rohe.
+
+(Disclaimer: this product is not real and will not be monetized or sold in any way.)
