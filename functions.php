@@ -38,11 +38,26 @@ function generate_lorem() {
 }
 add_shortcode("lorem", "generate_lorem");
 
-function generate_employees() {
-  $employees = "Frank, James, Bob";
-  return "<p>" . $employees . "</p>";
+
+
+// Dancing dog!
+
+function generate_dog_gif() {
+  return "
+    <div class='error-message'>
+      <h2>
+        404
+      </h2>
+      <p>
+        The site you are looking for, doesn't exist!
+      </p>
+      <p>
+        In the meantime, pleas look at this dancing dag instead :)
+      </p>
+      <img src=" . get_template_directory_uri() . "/assets/dancing_dog.gif' alt='Gif of a man dancing with a dog'>
+    </div>
+  ";
 }
-add_shortcode("employees", "generate_employees");
 
 
 
@@ -161,6 +176,7 @@ function load_scripts(){
   wp_enqueue_style("resets", get_template_directory_uri() . "/styles/resets.css");
   wp_enqueue_style("header_styles", get_template_directory_uri() . "/styles/headerStyle.css");
   wp_enqueue_style("footer_styles", get_template_directory_uri() . "/styles/footerStyle.css");
+  wp_enqueue_style("errorMessage", get_template_directory_uri() . "/styles/errorMessage.css");
   wp_enqueue_style("home_page", get_template_directory_uri() . "/styles/homePage.css");
   wp_enqueue_style("post_card", get_template_directory_uri() . "/styles/postCard.css"); 
   wp_enqueue_style("post_container", get_template_directory_uri() . "/styles/postContainer.css");
