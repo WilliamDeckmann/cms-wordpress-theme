@@ -40,7 +40,7 @@
     <?php
 
       // Products
-      echo print_products();
+      // echo print_products();
     ?>
     <?php
 

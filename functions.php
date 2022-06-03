@@ -164,6 +164,6 @@ function load_scripts(){
   wp_enqueue_style("post_card", get_template_directory_uri() . "/styles/postCard.css"); 
   wp_enqueue_style("post_container", get_template_directory_uri() . "/styles/postContainer.css");
   wp_enqueue_style("product_card", get_template_directory_uri() . "/styles/productCard.css");
-  wp_enqueue_style("product_container", get_template_directory_uri() . "/styles/productContainer.css"); 
+  wp_enqueue_style("product_container", get_template_directory_uri() . "/styles/productContainer.css");
 }
 add_action("wp_enqueue_scripts", "load_scripts");
