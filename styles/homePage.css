@@ -1,0 +1,71 @@
+.entry h2, .entry p {
+  padding: 24px;
+  margin: 0;
+}
+
+.entry h2 {
+	font-size: 1.8em;
+}
+
+.entry p {
+	font-size: 1.2em;
+}
+
+.entry figcaption {
+	font-size: 0.8em;
+	padding: 0 48px;
+	margin: 16px 0 0 0;
+	text-align: center;
+	color: grey;
+}
+
+.entry blockquote {
+	padding: 0 24px 24px 24px;
+	margin: 0;
+  margin-left: 24px;
+}
+
+.entry blockquote p {
+	border-left: 2px solid black;
+}
+
+.entry cite {
+	margin-left: 72px;
+}
+
+.entry hr {
+	margin: 24px auto 24px auto;
+	width: 65%;
+}
+
+.entry form {
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 24px;
+}
+
+.entry form p {
+	padding: 0;
+}
+
+.wpcf7-submit {
+	width: fit-content;
+  padding: 8px 16px;
+  margin-bottom: 24px;
+	border-radius: 99999px;
+  font-size: 1.2em;
+  text-align: center;
+	background-color: orange;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 2px 4px 12px;
+}
+
+.wpcf7-not-valid-tip {
+  color: orangered;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output {
+  margin: 0;
+  border: 2px solid orangered;
+}
