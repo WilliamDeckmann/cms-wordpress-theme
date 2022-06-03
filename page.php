@@ -22,7 +22,7 @@
               <?php
 
                 // Content
-                echo "<h2>" . get_the_title() . "</h2>";
+                //echo "<h2>" . get_the_title() . "</h2>";
                 echo "<div class='entry'>";
                   the_content();
                 echo "</div>";

@@ -16,6 +16,8 @@
 .post-container img {
 	width: 100%;
 	height: auto;
+	min-height: 150px;
+	max-height: 450px;
 	object-fit: cover;
 }
 
