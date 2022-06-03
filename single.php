@@ -36,7 +36,7 @@
         } else {
 
           // 404 (sit not found!)
-          echo "<p>The site you are looking for, doesn't exist!</p>";
+          echo generate_dog_gif();
         }
       ?>
     </main>
