@@ -51,11 +51,11 @@
 
 .wpcf7-submit {
 	width: fit-content;
-  	padding: 8px 16px;
-  	margin-bottom: 24px;
+	  padding: 8px 116px;
+	  margin-bottom: 24px;
 	border-radius: 99999px;
-  	font-size: 1.2em;
-  	text-align: center;
+	  font-size: 1.2em;
+	  text-align: center;
 	background-color: orange;
 	border: none;
 	box-shadow: rgba(0, 0, 0, 0.25) 2px 4px 12px;
@@ -63,10 +63,15 @@
 }
 
 .wpcf7-not-valid-tip {
-  color: orangered;
+	color: orangered;
 }
 
 .wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output {
-  margin: 0;
-  border: 2px solid orangered;
+	margin: 0;
+	border: 2px solid orangered;
 }
+
+.wp-block-contact-form-7-contact-form-selector {
+	margin-top: 2rem;
+}
+
