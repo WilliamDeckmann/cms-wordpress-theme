@@ -73,5 +73,30 @@
 
 .wp-block-contact-form-7-contact-form-selector {
 	margin-top: 2rem;
+  margin: 0;
+  border: 2px solid orangered;
 }
 
+.wp-block-calendar {
+	padding: 24px;
+}
+
+.wp-block-calendar th a {
+	color: orangered;
+}
+
+.wp-block-calendar caption {
+	padding-bottom: 12px;
+}
+
+.wp-block-calendar table th {
+	background: lightblue;
+}
+
+.wp-block-calendar a {
+	color: orange;
+}
+
+.wp-calendar-nav {
+	margin-top: 12px;
+}
